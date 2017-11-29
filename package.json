@@ -1,0 +1,29 @@
+{
+  "name": "css-example",
+  "version": "1.0.0",
+  "description": "css example code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashcroft147/css-example.git"
+  },
+  "keywords": [
+    "css",
+    "sass"
+  ],
+  "author": "Kim JeongHyun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ashcroft147/css-example/issues"
+  },
+  "homepage": "https://github.com/ashcroft147/css-example#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.12.1"
+  }
+}
