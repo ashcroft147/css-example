@@ -87,10 +87,17 @@ $ touch bin/build-css bin/watch-css
 ~~~
 
 build-css, watch-css 의 파일 내용을 다음과 같이 바꾼다. 
+file로 script를 쓰면, 따옴표를 생략하여 표현할 수 있다. 
 
 ~~~
 node-sass --include-path scss scss/main.scss public/css/main.css
-nodemon -e scss -x “npm run build-css”
+nodemon -e scss -x npm run build-css
+~~~
+
+위와같이 만들어진 파일을 excutable하게 만들기 위해 다음의 명령어를 실행한다. 
+~~~
+chmod +x bin/build-css
+chmod +x bin/watch-css
 ~~~
 
 npm script의 내용을 아래와 같이 바꾼다. 
